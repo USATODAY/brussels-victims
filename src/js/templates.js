@@ -27,7 +27,7 @@ function print() { __p += __j.call(arguments, '') }
 with (obj) {
 __p += '\n      <div class="card card-detail">\n      \n        <div class="iapp-detail-image-wrap">\n        ';
  if (person.photo !== "") { ;
-__p += '\n            <img class="iapp-detail-image" src="http://www.gannett-cdn.com/experiments/usatoday/2015/11/paris-victims/img/victims/' +
+__p += '\n            <img class="iapp-detail-image" src="http://www.gannett-cdn.com/experiments/usatoday/2016/03/brussels-victims/img/victims/' +
 ((__t = (person.photo)) == null ? '' : __t) +
 '" alt="' +
 ((__t = (person.name)) == null ? '' : __t) +
@@ -82,10 +82,10 @@ function print() { __p += __j.call(arguments, '') }
 with (obj) {
 __p += '\n';
  if (photo !== "") { ;
-__p += '\n<div class="cover-img-wrap">\n    <img class="cover-img" src="http://www.gannett-cdn.com/experiments/usatoday/2015/11/paris-victims/img/victims/' +
+__p += '\n<div class="cover-img-wrap">\n    <img class="cover-img" src="http://www.gannett-cdn.com/experiments/usatoday/2016/03/brussels-victims/img/victims/' +
 ((__t = (photo)) == null ? '' : __t) +
 '" alt="' +
-((__t = (name)) == null ? '' : __t) +
+((__t = (fullname)) == null ? '' : __t) +
 '">\n</div>\n';
  } ;
 __p += '\n\n<div class="iapp-card-info">\n    <h2 class="iapp-card-info-header">\n        ' +
