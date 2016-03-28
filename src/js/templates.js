@@ -30,7 +30,7 @@ __p += '\n      <div class="card card-detail">\n      \n        <div class="iapp
 __p += '\n            <img class="iapp-detail-image" src="http://www.gannett-cdn.com/experiments/usatoday/2015/11/paris-victims/img/victims/' +
 ((__t = (person.photo)) == null ? '' : __t) +
 '" alt="' +
-((__t = (person.fullname)) == null ? '' : __t) +
+((__t = (person.name)) == null ? '' : __t) +
 '">\n        ';
  } ;
 __p += '\n        </div>\n      \n        <div class="close-card">\n            <img class="iapp-close-card-inner" src="http://www.gannett-cdn.com/experiments/usatoday/2015/02/red-carpet/img/close-icon.svg">\n            \n            </img>\n        </div>\n      \n      \n      \n        <div class="iapp-detail-info">\n            ';
@@ -52,8 +52,12 @@ __p += ', ' +
 ((__t = ( person.age )) == null ? '' : __t);
  };
 __p += '\n            </h2>\n            \n            \n            ';
- if (person.nationality) {;
-__p += '\n            ';
+ if (person.nationality !== '') {;
+__p += '\n              <p class="iapp-card-info-text"><img src="http://www.gannett-cdn.com/experiments/usatoday/2016/03/brussels-victims/img/flags/';
+ print(person.nationality.replace(" ", "")) ;
+__p += '.png" alt="nationality flag" class="iapp-detail-flag-icon">' +
+((__t = ( person.nationality )) == null ? '' : __t) +
+'</p>\n            ';
  };
 __p += '\n            <p class="iapp-summary">' +
 ((__t = (person['occupation'])) == null ? '' : __t) +
