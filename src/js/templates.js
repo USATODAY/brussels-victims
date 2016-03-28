@@ -30,7 +30,7 @@ __p += '\n      <div class="card card-detail">\n      \n        <div class="iapp
 __p += '\n            <img class="iapp-detail-image" src="http://www.gannett-cdn.com/experiments/usatoday/2015/11/paris-victims/img/victims/' +
 ((__t = (person.photo)) == null ? '' : __t) +
 '" alt="' +
-((__t = (person.name)) == null ? '' : __t) +
+((__t = (person.fullname)) == null ? '' : __t) +
 '">\n        ';
  } ;
 __p += '\n        </div>\n      \n        <div class="close-card">\n            <img class="iapp-close-card-inner" src="http://www.gannett-cdn.com/experiments/usatoday/2015/02/red-carpet/img/close-icon.svg">\n            \n            </img>\n        </div>\n      \n      \n      \n        <div class="iapp-detail-info">\n            ';
@@ -42,25 +42,21 @@ __p += '\n              <p class="iapp-card-back-photo-credit">Photo: ' +
 __p += '\n            ';
  if (person.place) {;
 __p += '\n              <span class="label label-default">' +
-((__t = ( person.place )) == null ? '' : __t) +
+((__t = ( person['diedat'] )) == null ? '' : __t) +
 '</span>\n            ';
  };
 __p += '\n            <h2 class="card-back-header">\n              ' +
-((__t = ( person.name )) == null ? '' : __t);
+((__t = ( person.fullname )) == null ? '' : __t);
  if (person.age) {;
 __p += ', ' +
 ((__t = ( person.age )) == null ? '' : __t);
  };
 __p += '\n            </h2>\n            \n            \n            ';
  if (person.nationality) {;
-__p += '\n              <p class="iapp-card-info-text"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/11/paris-victims/img/flags/';
- print(person.nationality.replace(" ", "")) ;
-__p += '.png" alt="nationality flag" class="iapp-detail-flag-icon">' +
-((__t = ( person.nationality )) == null ? '' : __t) +
-'</p>\n            ';
+__p += '\n            ';
  };
 __p += '\n            <p class="iapp-summary">' +
-((__t = (person.bio)) == null ? '' : __t) +
+((__t = (person['occupation'])) == null ? '' : __t) +
 '</p>\n        </div>\n      \n      \n      </div>\n      ';
  if (showNext) { ;
 __p += '\n      <div class="iapp-next-detail iapp-detail-nav">\n        <img class="" src="http://www.gannett-cdn.com/experiments/usatoday/2015/11/paris-victims/img/right-arrow.png">\n        Next\n      </div>\n      ';
@@ -89,7 +85,7 @@ __p += '\n<div class="cover-img-wrap">\n    <img class="cover-img" src="http://w
 '">\n</div>\n';
  } ;
 __p += '\n\n<div class="iapp-card-info">\n    <h2 class="iapp-card-info-header">\n        ' +
-((__t = ( name )) == null ? '' : __t);
+((__t = ( fullname )) == null ? '' : __t);
  if (age) {;
 __p += ', ' +
 ((__t = ( age )) == null ? '' : __t) +
@@ -101,7 +97,7 @@ __p += '\n        <p class="iapp-card-info-photo-credit">Photo: ' +
 ((__t = ( photo_source )) == null ? '' : __t) +
 '</p>\n    ';
  } ;
-__p += '\n    -->\n    \n</div>';
+__p += '\n    -->\n    \n</div>\n';
 
 }
 return __p
