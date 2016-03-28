@@ -1,0 +1,56 @@
+.iapp-end-modal-wrap {
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5000;
+}
+
+.iapp-end-modal-bg {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;   
+}
+
+.iapp-end-modal-wrap-content {
+    background: white;
+    border-radius: 5px; 
+    @include BoxShadowHelper(5);
+    left: 50%;
+    max-width: 90%;
+    padding: 2em;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    z-index: 500;
+}
+
+.iapp-end-header {
+    font-family: "Futura Today DemiBold", Arial, sans-serif;
+    font-size: 1.5em;
+}
+
+.iapp-end-modal-close {
+    background-image: url('http://www.gannett-cdn.com/experiments/usatoday/2015/02/red-carpet/img/close-icon-grey.svg');
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  text-align: right;
+  top: 0.5em;
+  right: 0.5em;
+  width: 40px;
+}
+
+// hide always on shared route
+
+.iapp-share-route .iapp-end-modal-wrap {
+    display: none !important;
+}

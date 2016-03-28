@@ -1,0 +1,46 @@
+.iapp-search-button {
+    button {
+        background: $blue;
+        color: white;
+        font-family: "Futura Today Light", Arial, sans-serif;
+        &:hover {
+            background: $blue;
+            color: white;
+        }
+    }
+}
+
+.search-wrap-container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 400px;
+}
+
+
+.no-results-message.alert-danger {
+    background-color: lighten($red, 30);
+    border: darken($red, 20);
+    color: darken($red, 20);
+    margin: 0 auto;
+    max-width: 90%;
+    text-align: center;
+    width: 400px;
+}
+
+.no-results-wrap {
+    display: none;
+}
+
+.no-results-image {
+    margin: 1em auto;
+    width: 70px;
+    img {
+        width: 100%;
+    }
+}
+
+.iapp-last-week-route {
+    .search-wrap-container {
+        display: none;
+    }
+}

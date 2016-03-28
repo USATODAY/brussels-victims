@@ -1,0 +1,18 @@
+
+<% if (photo !== "") { %>
+<div class="cover-img-wrap">
+    <img class="cover-img" src="http://www.gannett-cdn.com/experiments/usatoday/2015/11/paris-victims/img/victims/<%=photo%>" alt="<%=name%>">
+</div>
+<% } %>
+
+<div class="iapp-card-info">
+    <h2 class="iapp-card-info-header">
+        <%= name %><% if (age) {%>, <%= age %></p><% }%>
+    </h2>
+    <!--
+    <% if (photo !== "") { %>
+        <p class="iapp-card-info-photo-credit">Photo: <%= photo_source %></p>
+    <% } %>
+    -->
+    
+</div>

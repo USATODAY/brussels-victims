@@ -1,0 +1,103 @@
+article {
+  font-family: "Futura Today Normal", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  margin: 0;
+}
+
+article .iapp-page-header {
+  color: $blue;
+  font-family: "Futura Today Bold", Arial,sans-serif;
+  font-size: 2.8em;
+  line-height: 1em;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+  text-align: left;
+  text-transform: uppercase;
+  @media (max-width: $mid-break) {
+    font-size: 2em;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.iapp-page-chatter {
+  font: normal 1.2em/1.5 'arial','helvetica',sans-serif;
+  color: #666;
+  margin: 1em 0;
+}
+
+.iapp-time-stamp {
+  color: #aaa;
+  font: normal 0.7em/1.5 'arial','helvetica',sans-serif;
+  font-style: italic;
+  margin: -2em auto 2em 0;
+}
+
+.topic-header, .card-question {
+  color: $dark-grey;
+  // border-bottom: solid 1px $dark-blue;
+  font-family: "Futura Today Bold", Arial, sans-serif;
+  font-size: 1.5em;
+  // margin-bottom: 0.5em;
+  // text-decoration: underline;
+  text-transform: uppercase;
+
+
+}
+
+.topic-chatter {
+  font-family: "Futura Today Normal", Arial, sans-serif;
+  max-width: 30em;
+}
+
+.hashtags {
+  color: $light-blue;
+  margin-top: 0;
+}
+
+@media (max-width: $breakPoint-medium) {
+  .iapp-page-header {
+    font-size: 1.8em;
+  }
+}
+
+.card-question {
+  display: inline-block;
+  vertical-align:middle;
+}
+
+.card-back-header {
+  color: $dark-grey;
+  // border-bottom: solid 1px $dark-blue;
+  font-family: "Futura Today Normal", Arial, sans-serif;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  // text-decoration: underline;
+  // text-transform: uppercase;
+}
+
+.iapp-dark-blue {
+  color: $dark-blue;
+}
+
+.read-more-link {
+  color: $blue;
+}
+
+.iapp-credits { 
+  color: $medium-grey;
+  clear: both;
+  font-family: Arial, sans-serif;
+  font-size: 12px;  
+}
+
+.iapp-summary {
+  font-family: "Futura Today Normal", Arial, sans-serif;
+  font-weight: 400;
+  margin-bottom: 1em;
+}

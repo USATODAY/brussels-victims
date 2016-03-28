@@ -1,0 +1,44 @@
+.iapp-filter-button {
+  border: solid 1px white;
+  border-radius: 5px;
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+  float: left;
+  font-size: 0.8em;
+  background: none;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+  text-transform: uppercase;
+
+  &.iapp-selected {
+    background: white;
+    color: $dark-grey;
+  }
+
+  &.unavailable {
+    display: none;
+  }
+}
+
+.iapp-filters-wrap {
+  @extend .group;
+  margin-bottom: 100px;
+}
+
+.iapp-filter-button-clear {
+  @extend .iapp-filter-button;
+  background: none;
+  border: solid 1px $light-blue;
+  color: $light-blue;
+  display: none;
+  &.show {
+    display: inline-block;
+  }
+}
+
+.filter-title {
+    clear: both;
+    font-family: "Futura Today Light", Arial, sans-serif;
+}
