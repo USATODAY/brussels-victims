@@ -12,7 +12,7 @@ __p += '<div class="iapp-project-info-wrap">\n    <h1 class="iapp-page-header">'
 ((__t = ( chatter )) == null ? '' : __t) +
 ' </p>\n    <p class="iapp-page-chatter iapp-dark-blue">Last updated on: ' +
 ((__t = (updated_at )) == null ? '' : __t) +
-'</p>\n    <div class="iapp-share-wrap"></div>\n     \n</div>\n<div class="no-results-wrap">\n    <div class=\'no-results-message alert alert-danger\'><strong>No results!</strong> Try searching for another guest.</div>\n</div>\n<div class="iapp-menu"></div>\n<div id="card-wrap" class="iapp-card-wrap"></div>\n<div class="iapp-credits-wrap">\n    <p class="iapp-page-credits"><strong>Credits: </strong>' +
+'</p>\n    <div class="iapp-share-wrap"></div>\n     \n</div>\n<div class="iapp-menu"></div>\n<div id="card-wrap" class="iapp-card-wrap"></div>\n<div class="iapp-credits-wrap">\n    <p class="iapp-page-credits"><strong>Credits: </strong>' +
 ((__t = ( credits )) == null ? '' : __t) +
 '</p>\n</div>\n\n\n\n<div class="iapp-end-modal-wrap"></div>\n\n';
 

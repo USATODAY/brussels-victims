@@ -12,7 +12,6 @@ define([
 
       initialize: function() {
           this.listenTo(this.model, 'change:filteredAppearancesTotal', this.onAppearancesChange);
-          console.log(this.model);
       },
       attributes: function() {
           return {
