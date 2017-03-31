@@ -10,7 +10,7 @@ define(
     return Backbone.Model.extend( {
         defaults: {
             'default_share_language': '',
-            'stillimage': 'http://www.gannett-cdn.com/experiments/usatoday/2015/03/sunday-shows/img/fb-post.jpg'            
+            'stillimage': 'https://www.gannett-cdn.com/experiments/usatoday/2015/03/sunday-shows/img/fb-post.jpg'
         },
 
         initialize: function() {
